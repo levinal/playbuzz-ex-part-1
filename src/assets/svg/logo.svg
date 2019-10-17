@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="127" height="26" viewBox="0 0 127 26">
+    <g fill="#555" fill-rule="evenodd">
+        <rect width="5" height="25" x="30"/>
+        <g transform="translate(72)">
+            <rect width="5" height="24" x="9.5" y="-9.5" transform="rotate(90 12 2.5)"/>
+            <rect width="5" height="24" x="9.5" y=".5" transform="rotate(90 12 12.5)"/>
+            <rect width="5" height="24" x="9.5" y="10.5" transform="rotate(90 12 22.5)"/>
+        </g>
+        <polygon points="13 0 26 25 0 25" transform="rotate(-180 13 12.5)"/>
+        <polygon points="53.5 .5 66.5 25.5 40.5 25.5" transform="rotate(90 53.5 13)"/>
+        <rect width="25" height="25" x="102"/>
+    </g>
+</svg>

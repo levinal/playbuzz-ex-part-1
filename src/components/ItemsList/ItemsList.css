@@ -1,0 +1,16 @@
+.item-list__header {
+    height: 24px;
+    border-bottom: solid 1px #EAEAEA;
+}
+
+.item-list__header h1 {
+    font-size: 16px;
+    color: #555555;
+}
+
+.items-list__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
