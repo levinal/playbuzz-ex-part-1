@@ -20,7 +20,7 @@ class itemsList extends Component {
 
         return (
             <div className="items-list">
-                <div class="item-list__header">
+                <div className="item-list__header">
                     <h1>Most viewed</h1>
                 </div>
                 <div className="items-list__content">{items}</div>

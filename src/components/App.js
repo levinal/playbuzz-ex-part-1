@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component, lazy, Suspense } from 'react';
 
 import './App.css'
 
 import Navbar from '../components/Navbar/Navbar'
-import ItemsList from './ItemsList/ItemsList'
 import playbuzz from '../api/playbuzz';
+
+const ItemsList = lazy(() => import('./ItemsList/ItemsList'));
 
 class App extends Component {
     state = { items: [] };
@@ -14,7 +15,9 @@ class App extends Component {
             <div className="app">
                 <Navbar />
                 <main>
-                    <ItemsList items={this.state.items} />
+                    <Suspense fallback={'Loading..'}>
+                        <ItemsList items={this.state.items} />
+                    </Suspense>
                 </main>
             </div>
         );

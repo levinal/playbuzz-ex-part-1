@@ -11,8 +11,8 @@ class displayItem extends Component {
         return this.props.itemData.source && source.name === this.props.itemData.source;
     });
 
-    isValidItem = ({title, type, videoId, source, views, length, date}) => {
-        return title && type && videoId && source && views && length && date;
+    isValidItem = ({type, source, views, length, date}) => {
+        return type && source && views && length && date;
     };
 
     dateStrOption = { year: 'numeric', month: 'short', day: 'numeric' };

@@ -2,6 +2,7 @@ import React from 'react';
 import { ReactComponent as PlaybuzzLogo } from '../assets/svg/playbuzz-icon.svg'
 import { ReactComponent as FacebookLogo } from '../assets/svg/facebook-icon.svg'
 import { ReactComponent as YoutubeLogo } from '../assets/svg/youtube-icon.svg'
+import { ReactComponent as UrlLogo } from '../assets/svg/url-icon.svg'
 
 export const VideoSourceTypes = [
     {
@@ -22,14 +23,16 @@ export const VideoSourceTypes = [
             return (
                 <div className="url-source">
                     <iframe
+                        title="url"
+                        height="210"
                         src={url}
-                        frameborder="0">
+                        frameBorder="0">
                     </iframe>
                 </div>
             );
         },
         getIcon: () => {
-            return <PlaybuzzLogo />;
+            return <UrlLogo />;
         }
     },
     {
@@ -40,8 +43,10 @@ export const VideoSourceTypes = [
             return (
                 <div className="facebook-source">
                     <iframe
+                        title="facebook"
+                        height="210"
                         src={src}
-                        frameborder="0">
+                        frameBorder="0">
                     </iframe>
                 </div>
             );
@@ -58,6 +63,8 @@ export const VideoSourceTypes = [
             return (
                 <div className="youtube-source">
                     <iframe
+                        height="210"
+                        title="youtube"
                         src={src}>
                     </iframe>
                 </div>
